@@ -1,7 +1,7 @@
 {
   "name": "@m11g/nuxt-base",
   "type": "module",
-  "version": "0.0.10",
+  "version": "0.0.12",
   "main": "./nuxt.config.ts",
   "scripts": {
     "dev": "nuxi dev .playground",
@@ -14,9 +14,11 @@
   "devDependencies": {
     "@nuxt/eslint-config": "^0.1.1",
     "@nuxtjs/i18n": "8.0.0-beta.10",
-    "eslint": "^8.28.0",
-    "nuxt": "^3.0.0",
-    "typescript": "^4.9.3"
+    "@nuxtjs/eslint-config-typescript": "^12.0.0",
+    "@vite-pwa/nuxt": "^0.0.7",
+    "eslint": "^8.36.0",
+    "nuxt": "^3.3.1",
+    "typescript": "^5.0.2"
   },
   "description": "Create Nuxt extendable layer with this GitHub template.",
   "repository": {
