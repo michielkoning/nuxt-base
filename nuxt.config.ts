@@ -1,4 +1,9 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+import { fileURLToPath } from 'node:url'
+import { dirname, join } from 'node:path'
+
+const currentDir = dirname(fileURLToPath(import.meta.url))
+
 export default defineNuxtConfig({
   modules: [
     '@nuxt/eslint',
@@ -27,7 +32,7 @@ export default defineNuxtConfig({
       ],
     },
   },
-  css: ['~/assets/css/base.css'],
+  css: [join(currentDir, './app/assets/css/base.css')],
   compatibilityDate: '2026-07-02',
   vite: {
     optimizeDeps: {
