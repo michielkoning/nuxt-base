@@ -27,7 +27,9 @@ export default defineNuxtConfig({
       ],
     },
   },
-  compatibilityDate: '2026-07-02', vite: {
+  css: ['~/assets/css/base.css'],
+  compatibilityDate: '2026-07-02',
+  vite: {
     optimizeDeps: {
       include: [
         '@vue/devtools-core',
