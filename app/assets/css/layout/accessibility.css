@@ -1,0 +1,20 @@
+.sr-only {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+}
+
+:focus-visible {
+  outline: 2px dotted var(--color-primary);
+}
+
+@media screen and (inverted-colors: inverted) {
+  img {
+    filter: invert(100%);
+  }
+}

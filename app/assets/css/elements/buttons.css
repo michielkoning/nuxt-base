@@ -1,0 +1,21 @@
+button {
+  inline-size: auto;
+  padding: 0;
+  margin: 0;
+  overflow: visible;
+  font: inherit;
+  line-height: var(--line-height-headings);
+  color: inherit;
+  text-decoration: none;
+  appearance: none;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+
+  &[disabled] {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "extends": [
+    "stylelint-config-standard",
+    "stylelint-config-standard-vue",
+		"@stylistic/stylelint-config",
+    "stylelint-config-recess-order"
+  ],
+  "plugins": [
+    "stylelint-use-logical"
+  ],  
+  "rules": {
+    "csstools/use-logical": "always",
+    "import-notation": null,
+    "at-rule-no-unknown": [
+      true,
+      {
+        "ignoreAtRules": ["mixin", "define-mixin"]
+      }
+    ],
+    "selector-pseudo-class-no-unknown": [
+      true,
+      {
+        "ignorePseudoClasses": ["global", "readonly", "deep", "scroll-button", "scroll-marker", "target-current"]
+      }
+    ],
+
+    "selector-type-no-unknown": [true, { "ignoreTypes": ["left", "right"] }],
+    "nesting-selector-no-missing-scoping-root": null,
+    "property-no-deprecated": [true, { "ignoreProperties": ["clip"] }]
+  }
+}

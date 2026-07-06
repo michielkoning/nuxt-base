@@ -1,0 +1,40 @@
+{
+  "name": "base",
+  "type": "module",
+  "version": "0.0.1",
+  "main": "./nuxt.config.ts",
+  "scripts": {
+    "dev": "nuxi dev .playground",
+    "dev:prepare": "nuxt prepare .playground",
+    "build": "nuxt build .playground",
+    "generate": "nuxt generate .playground",
+    "preview": "nuxt preview .playground",
+    "lint": "pnpm lint:js && pnpm lint:css",
+    "lint:js": "eslint . --fix",
+    "lint:css": "stylelint \"**/*.{css,vue}\" --fix",
+    "typecheck": "nuxt typecheck"
+  },
+  "devDependencies": {
+    "@nuxt/eslint": "^1.15.2",
+    "@nuxt/image": "2.0.0",
+    "@nuxtjs/stylelint-module": "^5.2.1",
+    "@stylistic/stylelint-config": "^5.0.0",
+    "@types/node": "^24.13.1",
+    "eslint": "^10.6.0",
+    "eslint-plugin-vue": "^10.9.2",
+    "nuxt": "^4.4.8",
+    "stylelint": "^17.14.0",
+    "stylelint-config-recess-order": "^7.7.0",
+    "stylelint-config-recommended-vue": "^1.6.1",
+    "stylelint-config-standard": "^40.0.0",
+    "stylelint-config-standard-vue": "^1.0.0",
+    "stylelint-use-logical": "^2.1.3",
+    "typescript": "^6.0.3",
+    "vue": "^3.5.35",
+    "vue-tsc": "^3.3.5"
+  },
+  "dependencies": {
+    "@vee-validate/nuxt": "^4.15.1",
+    "vee-validate": "^4.15.1"
+  }
+}

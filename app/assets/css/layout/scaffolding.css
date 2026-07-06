@@ -1,0 +1,33 @@
+* {
+  &,
+  &::before,
+  &::after {
+    box-sizing: border-box;
+  }
+}
+
+:root {
+  interpolate-size: allow-keywords;
+}
+
+::selection {
+  color: var(--color-white);
+  background: var(--color-primary);
+}
+
+html {
+  -webkit-tap-highlight-color: rgb(0 0 0 / 0%);
+  container-type: scroll-state;
+}
+
+body {
+  flex-direction: column;
+  min-block-size: 100vh;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  background: var(--color-background);
+}
+
+p:empty {
+  display: none;
+}
